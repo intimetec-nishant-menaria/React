@@ -1,0 +1,32 @@
+.layout {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+
+.filter-btn {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #ddd;
+}
+
+.filter-btn.active {
+  background-color: #646cff;
+  color: white;
+}

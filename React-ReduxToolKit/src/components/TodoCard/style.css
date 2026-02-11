@@ -1,0 +1,128 @@
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-2px);
+}
+
+.todo-text {
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  flex: 1;
+  min-width: 0;
+}
+
+.delete-btn , .edit-btn ,.toggle-complete ,.toggle-pending{
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1px;
+  transition: 0.2s ease;
+}
+
+button:focus{
+  outline: none;
+}
+
+.delete-btn{
+  background-color:#d9363e;
+}
+
+.edit-btn {
+  background-color: green;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e;
+}
+
+.edit-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.edit-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.edit-input:focus {
+  border-color: #646cff;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.save-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.save-btn:hover {
+  background-color: #535bf2;
+}
+
+.discard-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d9363e;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.discard-btn:hover {
+  background-color: #bbb;
+}
+
+.toggle-complete {
+  background-color: #22c55e;  
+  color: white;
+}
+
+.toggle-pending {
+  background-color: #f59e0b;   
+  color: white;
+}
+
+
+@media (max-width: 480px) {
+  .todo-card {
+    padding: 12px;
+  }
+
+  .todo-text {
+    font-size: 14px;
+  }
+}
